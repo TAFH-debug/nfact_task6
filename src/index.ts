@@ -14,10 +14,6 @@ app.use(express.json());
 app.use('/api/v1/',globalRouter);
 
 
-app.get('/helloworld',(request,response) =>{
-  response.send("Hello World!");
-})
-
 app.listen(PORT, () => {
   console.log(`Server runs at http://localhost:${PORT}`);
 });

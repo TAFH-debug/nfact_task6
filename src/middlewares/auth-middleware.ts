@@ -6,7 +6,7 @@ const authService = new AuthService();
 export const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
   const authHeader = req.headers.authorization;
   if (!authHeader) {
-    return res.status(401).json({ message: 'Authorization header missing' });
+    return res.status(401).json({ message: 'Authorization header missing. Not Authorized.' });
   }
 
   const token = authHeader.split(' ')[1];

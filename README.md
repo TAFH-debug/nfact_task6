@@ -2,6 +2,34 @@
 
 This is a boilerplate project for building Node.js applications using TypeScript. It includes a basic setup for Express.js, custom logging middleware, and route management.
 
+## API Documentation
+
+```http request
+POST /api/v1/register
+{ 
+    "username": "",
+    "email": "",
+    "city": "",
+    "password": ""
+}
+```
+
+```http request
+
+POST /api/v1/events
+{
+"name": "",
+"description": "",
+"date": "",
+"city": "",
+"duration": ""
+}
+```
+
+```http request
+GET /api/v1/events?page=2&sortBy=name&sortDirection=desc
+```
+
 ## 🚀 Getting Started
 
 To get started with this project, follow these steps:
